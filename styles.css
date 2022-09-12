@@ -32,10 +32,36 @@
     flex-direction: column;
     justify-content: center;
     background-color: #1abc9c;
+    align-items: center;
 
 }
 
 .cover-image{
     width: 300px;
     height: auto;
+}
+
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-header{
+    font-size: 36px;
+    color: #2c3e50;
+}
+.portfolio-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
+    
+}
+
+.card-image{
+    width: 400px;
+    border-radius: 10px;
 }
