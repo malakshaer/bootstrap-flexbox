@@ -15,6 +15,13 @@
         <h2>OverView Page</h2>
       </div>
       <div>
+        <ul  class="button-nav-bar">
+            <li><i class="fa-solid fa-desktop"></i></li>
+            <li><i class="fa-solid fa-tablet"></i></li>
+            <li><i class="fa-solid fa-mobile"></i></li>
+        </ul>
+      </div>
+      <div>
         <ul class="button-nav-bar">
           <li><i class="fa-brands fa-github"></i></li>
           <li><button class="button-download">Free Download</button></li>
@@ -39,9 +46,7 @@
     <!--cover-->
     <div class="cover-container">
       <img class="cover-image" src="Images/happy.PNG" alt="happy-man" />
-      <h1>START BOOTSTRAP</h1>
-      <hr />
-      <hr />
+      <h1 class="cover-header">START BOOTSTRAP</h1>
       <p>Graphic Artist - Web Designer - Illustrator</p>
     </div>
     <!--End Cover-->
@@ -49,8 +54,6 @@
     <div class="portfolio-container">
       <div>
         <h1 class="portfolio-header">PORTFOLIO</h1>
-        <hr />
-        <hr />
       </div>
       <div class="portfolio-cards">
         <div>
@@ -76,7 +79,7 @@
     <!--End Portfolio Container-->
     <!--About-->
     <div class="about-container">
-      <h1>ABOUT</h1>
+      <h1 class="about-header">ABOUT</h1>
       <hr />
       <div class="paragraphs">
         <div>
@@ -99,46 +102,60 @@
     </div>
     <!--End About-->
     <!--Contact Me section-->
-    <div>
+    <div class="contact-container">
       <h1>CONTACT ME</h1>
-      <hr />
       <form>
-        <input type="text" placeholder="Full name" />
-        <input type="text" placeholder="Email address" />
-        <input type="text" placeholder="Phone number" />
-        <textarea
-          name="message"
-          id="textarea"
-          cols="30"
-          rows="10"
-          placeholder="Message"
-        ></textarea>
+        <div>
+          <input type="text" placeholder="Full name" />
+        </div>
+        <div>
+          <input type="text" placeholder="Email address" />
+        </div>
+        <div>
+          <input type="text" placeholder="Phone number" />
+        </div>
+        <div>
+          <textarea
+            name="message"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+        </div>
       </form>
       <button class="send-button">Send</button>
     </div>
     <!--End Contact Me Section-->
     <!--Footer-->
-    <div>
-      <div>
+    <footer>
+      <div class="footer-info">
+        <div class="footer-text">
         <h3>LOCATION</h3>
         <span>2215 John Daniel Drive Clark, MO 65243 </span>
+        </div>
+        <div class="footer-text">
         <h3>AROUND THE WEB</h3>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul  class="accounts">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+          <li><i class="fa-solid fa-baseball"></i></li>
         </ul>
+        </div class="footer-text">
+        <div>
         <h3>ABOUT FREELANCER</h3>
         <p>
           Freelance is a free to use, MIT licensed Bootstrap theme created by
-          Start Bootstrap .
+          Start Bootstrap.
         </p>
+        </div>
       </div>
-      <div class="buttom-footer">
+      <div class="bottom-footer">
         <p>Copyright © Your Website 2022</p>
       </div>
     </div>
+    </footer>
     <!--End Footer-->
   </body>
 </html>
