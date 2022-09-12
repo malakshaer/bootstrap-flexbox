@@ -103,15 +103,18 @@
     <!--Contact Me section-->
     <div class="contact-container">
       <h1>CONTACT ME</h1>
-      <form action="/" method="GET">
+      <form id="form" action="/" method="GET">
         <div class="input-container">
-          <input id="name" type="text" placeholder="Full name" />
+          <input id="full-name" type="text" placeholder="Full name" />
+          <small id="small"></small>
         </div>
         <div class="input-container">
           <input id="email" type="text" placeholder="Email address" />
+          <small id="small"></small>
         </div>
         <div class="input-container">
           <input id="phone" type="text" placeholder="Phone number" />
+          <small id="small"></small>
         </div>
         <div class="input-container">
           <textarea
@@ -120,10 +123,12 @@
             cols="50"
             rows="10"
             placeholder="Message"
+            required
           ></textarea>
+          <small id="small"></small>
         </div>
+        <button id="submit" class="send-button" type="submit">Send</button>
       </form>
-      <button class="send-button">Send</button>
     </div>
     <!--End Contact Me Section-->
     <!--Footer-->
@@ -147,7 +152,7 @@
         <p>
           Freelance is a free to use, MIT licensed</p>
           <p> Bootstrap theme created by
-          Start Bootstrap.
+          <a href="#" style="color: #1abc9c;">Start Bootstrap.</a>
         </p>
         </div>
       </div>
