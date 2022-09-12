@@ -65,3 +65,43 @@
     width: 400px;
     border-radius: 10px;
 }
+
+.about-container{
+    background-color: #1abc9c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+h1{
+    font-size: 48px;
+    color: #fff;
+}
+
+.paragraphs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 50px;
+}
+
+.about-paragraph{
+    color: #fff;
+    text-align: center;
+    
+}
+
+.submit-button{
+    color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 66px;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    font-size: 20px;
+}
