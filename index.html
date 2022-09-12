@@ -12,7 +12,7 @@
     <!-- Top nav bar -->
     <div class="upper-nav">
       <div>
-        <h2>OverView Page</h2>
+        <h2 class="over-view">OverView Page</h2>
       </div>
       <div>
         <ul  class="button-nav-bar">
@@ -47,7 +47,7 @@
     <div class="cover-container">
       <img class="cover-image" src="Images/happy.PNG" alt="happy-man" />
       <h1 class="cover-header">START BOOTSTRAP</h1>
-      <p>Graphic Artist - Web Designer - Illustrator</p>
+      <p class="cover-paragraph">Graphic Artist - Web Designer - Illustrator</p>
     </div>
     <!--End Cover-->
     <!--Portfolio Container-->
@@ -80,7 +80,6 @@
     <!--About-->
     <div class="about-container">
       <h1 class="about-header">ABOUT</h1>
-      <hr />
       <div class="paragraphs">
         <div>
           <p class="about-paragraph">
@@ -104,21 +103,21 @@
     <!--Contact Me section-->
     <div class="contact-container">
       <h1>CONTACT ME</h1>
-      <form>
+      <form action="/" method="GET">
         <div class="input-container">
-          <input type="text" placeholder="Full name" />
+          <input id="name" type="text" placeholder="Full name" />
         </div>
         <div class="input-container">
-          <input type="text" placeholder="Email address" />
+          <input id="email" type="text" placeholder="Email address" />
         </div>
         <div class="input-container">
-          <input type="text" placeholder="Phone number" />
+          <input id="phone" type="text" placeholder="Phone number" />
         </div>
         <div class="input-container">
           <textarea
             name="message"
             id="textarea"
-            cols="100"
+            cols="50"
             rows="10"
             placeholder="Message"
           ></textarea>
@@ -146,7 +145,8 @@
         <div>
         <h3>ABOUT FREELANCER</h3>
         <p>
-          Freelance is a free to use, MIT licensed Bootstrap theme created by
+          Freelance is a free to use, MIT licensed</p>
+          <p> Bootstrap theme created by
           Start Bootstrap.
         </p>
         </div>
@@ -157,5 +157,6 @@
     </div>
     </footer>
     <!--End Footer-->
+    <script src="script.js"></script>
   </body>
 </html>

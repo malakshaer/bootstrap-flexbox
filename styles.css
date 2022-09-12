@@ -1,16 +1,34 @@
 *{
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.over-view{
+    font-size: 12px;
+    color: #21283280;
 }
 
 .upper-nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.button-download{
+    border: #fff;
+    background-color: #f0e3e7;
+    color: #dc392d;
+    width: 130px;
+    height: 30px;
 }
 
 .button-nav-bar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
+    gap: 20px;
 }
 
 .nav-bar{
@@ -22,10 +40,13 @@
 
 .menu-nav-bar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     list-style: none;
-    gap: 10px;
+    gap: 30px;
 }
+/*Cover*/
 
 .cover-container{
     display: flex;
@@ -44,13 +65,21 @@
 
 .cover-header{
     color: #fff;
-    font-size: 44px;
+    font-size: 80px;
 }
+
+.cover-paragraph{
+    color: #FFF;
+    font-size: 30px;
+}
+/* Portfolio Container */
 
 .portfolio-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 .portfolio-header{
@@ -71,6 +100,7 @@
     width: 400px;
     border-radius: 10px;
 }
+/* About*/
 
 .about-container{
     background-color: #1abc9c;
@@ -84,6 +114,7 @@
 .about-header{
     font-size: 48px;
     color: #fff;
+    font-family: sans-serif;
 }
 
 .paragraphs{
@@ -91,8 +122,9 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
     padding-bottom: 50px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
 }
 
 .about-paragraph{
@@ -114,22 +146,32 @@
     border: 2px solid #FFF;
     font-size: 20px;
 }
+/*Contact Me*/
 
 .contact-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     padding-bottom: 50px;
+    padding-top: 20px;
 }
 
 input{
-    width: 803px;
-    height: 88px;
+    width: 700px;
+    height: 70px;
     border: #FFF;
+    font-size: 24px;
 }
 
 .input-container{
-    border-bottom: #2c3e50;
+    border-bottom: 1px solid #2c3e50;
+    padding-top: 10px;
+}
+
+textarea{
+    border: #FFF;
+    font-size: 24px;
 }
 
 .send-button{
@@ -157,8 +199,9 @@ footer{
 
 .footer-text{
     display: block;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align-last:center;
 }
 
 .footer-info{
