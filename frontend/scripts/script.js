@@ -6,7 +6,7 @@ const submit = document.getElementById("submit");
 const message = document.getElementById("textarea");
 const inputContainer = document.getElementsByClassName("input-container");
 
-form.addEventListener("submit", (e) => {
+submit.addEventListener("onclick", (e) => {
   e.preventDefault();
 
   checkInput();

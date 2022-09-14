@@ -249,3 +249,18 @@ footer{
     font-size: 16px;
     padding: 20px;
 }
+
+/*Data page*/
+
+.table-data{
+    border: 4px solid #1abc9c;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.table-data thead tr th{
+    display:inline-table;
+    border: 2px solid #1abc9c;
+    padding: 5px;
+}
