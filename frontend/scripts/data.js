@@ -1,4 +1,5 @@
 const submit = document.getElementById("submit");
+const form = document.getElementById("form");
 const list1 = [];
 const list2 = [];
 const list3 = [];
@@ -7,13 +8,19 @@ const list4 = [];
 let n = 1;
 let x = 0;
 
-submit.addEventListener("onclick", (e) => {
-  e.preventDefault();
+const url = (data) =>
+  ` http://localhost:8080/api-php/users.php?name=${name}&${email}&${phone}${message}`;
 
-  addRow();
-});
+async function getData(data) {
+  const resp = await fetch(url(data), { origin: "cors" });
+  const respData = await resp.json();
 
-function addRow() {
+  console.log(respData);
+
+  addRow(respData);
+}
+
+function addRow(data) {
   const addRows = document.getElementById("full-name");
   const newRow = addRows.insertRow(n);
 
@@ -35,3 +42,13 @@ function addRow() {
   n++;
   x++;
 }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const data = form.value;
+
+  if (data) {
+    addRow();
+  }
+});
