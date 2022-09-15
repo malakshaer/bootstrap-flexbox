@@ -11,14 +11,9 @@ $array = $query->get_result();
 
 $response = [];
 
-if($array-> num_rows > 0){
-    while($row = $array->fetch_assoc()){
-        $response[] = $row;
-        // echo "<tr><td>" . $row["name"] . "</td><td>" . $row["email"] ."</td><td>" . $row["phone"] ."</td><td>" . $row["message"] . </td></tr>";
-    }
-    echo "</table>";
-}else{
-    echo "0 result";
+
+while($row = $array->fetch_assoc()){
+    $response[] = $row;
 }
 
 $json = json_encode($response);
