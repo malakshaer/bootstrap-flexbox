@@ -6,7 +6,7 @@ const submit = document.getElementById("submit");
 const message = document.getElementById("textarea");
 const inputContainer = document.getElementsByClassName("input-container");
 
-submit.addEventListener("onclick", (e) => {
+submit.addEventListener("click", (e) => {
   e.preventDefault();
 
   checkInput();
@@ -25,25 +25,25 @@ function checkInput() {
     setSuccessFor(fullName);
   }
   //email
-  if (!isEmail(emailValue)) {
-    setErrorFor(email, "Not a valid email");
-  } else if (!"^[A-Za-z0-9_-]*3@^[A-Za-z.]*5".test(email)) {
-    setErrorFor(
-      email,
-      "email must have three character before @ and five after"
-    );
-  } else {
+  if (
+    emailValue.include("@") &&
+    emailValue.split("@")[0].length > 2 &&
+    email.value.split("@")[1].length > 4
+  ) {
     setSuccessFor(email);
+  } else {
+    setErrorFor(email, "Email is not valid");
   }
 
   //phone number
-  if (!"^+[0-9]*3/[0-9]*8".test(phone)) {
-    setErrorFor(
-      phone,
-      "phone must start with code +961 form example and must have 8 digit after"
-    );
-  } else {
+  if (
+    phoneValue.length < 12 &&
+    phoneValue.slice(0, 4) == "^+[0-9]*3" &&
+    phoneValue.slice(4, 5) == "^[0-9]"
+  ) {
     setSuccessFor(phone);
+  } else {
+    setErrorFor(phone, "Phone number is not valid");
   }
 
   //text message
@@ -59,16 +59,11 @@ function setErrorFor(input, message) {
   const small = inputContainer.querySelector("#small");
 
   inputContainer.className = "input-container error";
+  small.style.display = "block";
   small.innerHTML = message;
 }
 
 function setSuccessFor(input) {
   const inputContainer = input.parentElement;
   inputContainer.className = "input-container success";
-}
-
-function isEmail(email) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
-  );
 }
